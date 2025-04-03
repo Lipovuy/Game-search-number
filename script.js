@@ -11,7 +11,6 @@ let enterNumber;
 function startGame() {
   let i = 0;
   const randomNumber = Math.floor(Math.random() * (100 - 1 + 1) + 1);
-  console.log(randomNumber);
   do {
     i++;
     enterNumber = Number(prompt("Введи число від 1 до 100!"));
