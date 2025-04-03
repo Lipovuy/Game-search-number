@@ -1,0 +1,44 @@
+/* Загальні стилі для темної теми */
+body {
+  background-color: #2e2e2e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Заголовок */
+h3.h3 {
+  font-size: 24px;
+  color: #ffcc00; /* Золотистий колір для акценту */
+  margin-bottom: 20px;
+}
+
+/* Кнопка */
+#start {
+  background-color: #ffcc00; /* Золотистий колір */
+  color: #2e2e2e; /* Темно-сірий для контрасту */
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px; /* Відстань між кнопкою і параграфом */
+}
+
+#start:hover {
+  background-color: #e6b800; /* Трохи темніший колір при наведенні */
+}
+
+/* Параграф з результатом */
+#paragraph {
+  font-size: 20px;
+  color: #94e1ff; /* Світло-сірий для результату */
+}
