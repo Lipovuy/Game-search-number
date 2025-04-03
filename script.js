@@ -14,6 +14,9 @@ function startGame() {
   do {
     i++;
     enterNumber = Number(prompt("Введи число від 1 до 100!"));
+        if (enterNumber === 0) {
+      alert(`Number: ${randomNumber}`);
+    }
     if (enterNumber === randomNumber) {
       const counter = binary_search(Numbers, randomNumber, i);
       paragraph.textContent = `Молодець шампіньон ти відгадав число за ${i} ${correctStep(
