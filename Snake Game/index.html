@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Game Snake</title>
+  </head>
+  <body>
+    <button id="startBtn">Старт</button>
+    <div id="gameArea" style="display: none">
+      <audio id="bgMusic" src="music.mp3" preload="auto" loop></audio>
+      <audio id="game-over" src="game-over.mp3" preload="auto"></audio>
+      <audio id="game-start" src="game-start.mp3" preload="auto"></audio>
+      <div id="score">0</div>
+      <div id="level">Уровень 1</div>
+      <audio id="levelUpSound" src="levelup.mp3" preload="auto"></audio>
+      <audio id="carrotAudio" src="carrot.mp3" preload="auto"></audio>
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <img
+        id="screamerImg"
+        src="screamer.gif"
+        style="
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          z-index: 9999;
+        "
+      />
+      <audio id="screamerSound" src="screamer.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
